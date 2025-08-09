@@ -1,0 +1,47 @@
+1.
+1.1
+- สร้าง array ที่มีข้อมูลหลายชนิด ได้แก่ string, number, boolean, object, และ array อีกหนึ่งอัน
+- แสดงค่าตัวแรกใน array ('hello') โดยใช้ index 0
+- แสดงค่าตัวสุดท้ายใน array โดยใช้ array.length - 1 (เพราะ index เริ่มจาก 0)
+- แสดงความยาวของ array (จำนวนสมาชิก)
+- วน loop ผ่านทุกค่าของ array แล้วพิมพ์ออกมาพร้อมบอกชนิดข้อมูล (typeof)
+1.2
+- ลบค่าตัวสุดท้ายของ array (['apple','banana','orange']) ออก แล้วแสดง array ที่เหลือ
+
+2.
+2.1
+- สร้าง array ที่มี 2 สมาชิก
+  - object {name:'fruit', list:[...]}
+  - array ['hello', 'world']
+- เข้าถึง list ใน object ตัวแรก แล้วเลือก index 1 ('banana')
+- เข้าถึง array ตัวที่สอง แล้วเลือก index 1 ('world')
+2.2
+- สร้าง array ของ object ที่เก็บข้อมูลสี
+- แสดงค่าชื่อของสีใน index 1 ('purple')
+- วน loop แสดง "ชื่อสี is โทนสี" เช่น "red is hot"
+
+3.
+3.1
+- สร้าง array ของ object ที่เก็บ email และ address
+- เข้าถึง email ตัวที่ 2 ('foo@kmutt.ac.th')
+- เข้าถึง address ตัวแรก ('Bangkok')
+3.2
+- สร้าง array ที่มี array รายชื่อในกลุ่มซ้อนอยู่
+- แสดง 'Jane' และ 'Pete'
+- วน loop แล้วแสดงสมาชิกตัวสุดท้ายของแต่ละกลุ่ม (ให้ผลลัพธ์เหมือนอันก่อนหน้าแต่ใช้ loop)
+
+4.
+4.1
+- ใช้ ... (spread syntax) แยกตัวอักษรใน string ออกเป็น array เช่น ['g','o','o','d', ...]
+4.2
+- สร้าง array ใหม่ที่เอา 'start' ไว้หน้า, 'end' ไว้หลัง และแทรกตัวอักษรจาก array เดิมไว้ตรงกลาง
+
+5.
+5.1
+- สร้าง array ว่าง ด้วย new Array()
+- สร้าง array ที่มีช่องว่าง 5 ช่อง ด้วย new Array()
+- สร้าง array ที่มีสมาชิก 4 ตัว: 3, 2, 1, 'done' ด้วย new Array()
+5.2
+- ใช้ Array.of() สร้าง array จากค่าที่ใส่ เช่น Array.of(7) -> [7]
+- ใช้ Array.from() แปลง string ให้กลายเป็น array ของตัวอักษร
+- ใช้ Array.from() แปลง object ที่มีลักษณะคล้าย array (มี index และ length) ให้เป็น array จริง
