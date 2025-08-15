@@ -1,0 +1,87 @@
+1.
+1.1
+- สร้าง object car ที่มี property brand, model, year, method getBrand() คืนค่าชื่อยี่ห้อรถ
+1.2
+- console.log(car); พิมพ์ object ทั้งตัวออกมา
+1.3
+- console.log(car.getBrand()); เรียก method getBrand() แล้วพิมพ์ค่าที่ return (Toyota)
+
+2.
+2.1
+- สร้าง object university ที่มี property name, location, departments (array ชื่อคณะ),
+contact (object เก็บ email และ phone), method getLocation() คืนค่าตำแหน่ง
+2.2
+- console.log(university.departments[1]); เข้าถึงคณะที่ 2 (Engineering)
+2.3
+- console.log(university.contact.phone); เข้าถึงเบอร์โทรใน contact
+
+3.
+3.1
+- university.ranking = 3; เพิ่ม property ranking ให้ object university
+3.2
+- delete university.location; ลบ property location ออก
+3.3
+- console.log(university); แสดง object หลังแก้ไข
+
+4.
+4.1
+- ใช้ for...in เพื่อวนลูปอ่าน key และ value ของ car
+- console.log(`key: ${key}, value: ${car[key]}`);` แสดงทั้งชื่อ property และค่าของมัน
+
+5.
+5.1
+- สร้าง function Movie สำหรับสร้าง object เก็บข้อมูลหนัง (title, director, year)
+5.2
+- ใช้ new Movie(...) เพื่อสร้าง movie1 และ movie2
+- console.log(movie1); และ console.log(movie2); แสดงข้อมูลหนัง
+
+6.
+6.1
+- สร้าง class Laptop ที่มี:
+  - constructor เก็บ brand, price
+  - method getBrand() คืนค่ายี่ห้อ
+  - method setPrice(newPrice) เปลี่ยนราคา
+  - method getInfo() คืน string แสดงข้อมูล
+6.2
+- สร้าง object laptop1 และทดสอบ method ทั้งหมด
+
+7.
+7.1
+- สร้าง object animal ที่มี type, sound, method makeSound()
+7.2
+- ใช้ Object.create(animal) สร้าง object dog ที่สืบทอดคุณสมบัติจาก animal
+- เพิ่ม property breed และกำหนดค่า sound
+7.3
+- dog.makeSound() คืนค่า "woof"
+
+8. 
+8.1
+- สร้าง object a และ b ที่มีข้อมูลเหมือนกัน แต่เป็นคนละ reference
+8.2
+- เปรียบเทียบด้วย ===, ==, Object.is() -> ผลเป็น false เพราะเป็นคนละ object ใน memory
+8.3
+- b = a; ทำให้ b อ้างถึง object เดียวกับ a -> เปรียบเทียบแล้วได้ true
+
+9.
+- สร้างฟังก์ชัน shallowEquality() ตรวจว่าทุกค่าของ object สองตัวเท่ากันไหม
+9.1
+- ใช้ Object.keys() เพื่อดึง keys ทั้งหมด
+9.2
+- ถ้าจำนวน key ไม่เท่ากัน -> return false
+9.3
+- ใช้ for...of loop ถ้าค่าในแต่ละ key ไม่ตรงกัน -> return false
+9.4
+- ถ้าผ่านทุกข้อ -> return true
+
+10.
+10.1
+- Object.keys(movie1) ดึง keys ทั้งหมดใน object movie1
+10.2
+- Object.values(movie1) ดึงค่าของทุก property ใน object movie1
+
+11.
+11.1
+- Array destructuring: const [, , fruit3] = fruits ดึงค่าลำดับที่ 3 จาก array fruits
+11.3
+- Object destructuring: const {name, team} = player; ดึงค่าจาก property name และ team ของ player
+- Nested destructuring: const {stats:{goals}} = player; ดึงเฉพาะค่า goals จาก object stats
