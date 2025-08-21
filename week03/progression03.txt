@@ -1,0 +1,68 @@
+1.
+1.1
+- สร้างฟังก์ชัน subtract แบบ function declaration
+- รับ parameter 2 ตัว แล้ว return ผลลบ (a - b)
+1.2
+- สร้างฟังก์ชัน divide แบบ arrow function
+- return ผลหาร (a / b)
+1.3
+- สร้างฟังก์ชัน modulus แบบ function expression
+- return เศษจากการหาร (a % b)
+
+2.
+2.1
+- เอาฟังก์ชัน subtract เก็บใส่ตัวแปร myFunc
+- myFunc(5,6) -> ทำงานเหมือน subtract(5,6) -> ได้ -1
+2.2
+- ตรวจสอบว่า myFunc กับ subtract เป็นฟังก์ชันเดียวกันไหม
+- เนื่องจากเป็น reference เดียวกัน จึงได้ "myFunc is equal to subtract"
+
+3.
+3.1
+- สร้างฟังก์ชัน applyOperation รับ ฟังก์ชันอีกอัน (fn) + ตัวเลข a b แล้วเรียก fn(a,b)
+- applyOperation(divide, 15, 3) -> divide(15,3) -> 5
+- applyOperation(modulus, 13, 11) -> modulus(13,11) -> 2
+3.2
+- ฟังก์ชัน returnHelloFunction คืนค่า ฟังก์ชัน hello
+- ฟังก์ชัน returnHelloFunction()() -> เรียก hello() -> ได้ "Hello"
+
+4.
+4.1
+- สร้าง object laptop ที่มี property: brand = Dell, price = 25000
+4.2
+- สร้างฟังก์ชัน updatePrice เปลี่ยนค่า price ของ object
+4.3
+- ฟังก์ชัน updatePrice เปลี่ยนจาก 25000 เป็น 50000
+- แสดงให้เห็นว่า object เปลี่ยนได้เมื่อส่งเข้า function (ต่างจาก primitive type ที่เปลี่ยนไม่ได้)
+
+5.
+5.1
+- ใช้ rest parameter ...args เพื่อรับ argument กี่ตัวก็ได้
+- ใช้ for...of loop แสดงค่าแต่ละ argument
+- พิมพ์ 1, 2, 3, hello, true ออกมา
+5.2
+- ใช้ rest parameter ...nums เพื่อรับ argument กี่ตัวก็ได้
+- รวมค่าทั้งหมดเข้าตัวแปร output
+- ใช้ for...of loop รวมผลรวมออกมา
+
+6.
+6.1
+- สร้างฟังก์ชัน introduce ที่มีค่า default ให้กับ name และ age
+- ถ้าไม่ส่งค่า -> จะใช้ default
+- ถ้าส่งแค่ name -> age จะใช้ค่า default
+- ถ้าส่งทั้ง 2 -> ใช้ค่าที่ส่งมา
+
+7.
+สร้างฟังก์ชัน getFreqOfWords ที่รับ parameter sentence โดยที่:
+- ถ้า input เป็น null หรือ undefined -> return undefined
+- แปลงประโยคเป็นตัวพิมพ์เล็ก (toLowerCase)
+- แยกเป็น array ของคำ (split(' '))
+- วนลูป words (array ของคำในประโยค) ด้วย for..of
+- output[i] -> ใช้ i (ซึ่งเป็นคำ) เป็น key ของ object output
+- i in output ? output[i] += 1 : 1 -> ternary operator
+  - i in output -> เช็คว่า key มีอยู่แล้วใน object output หรือยัง
+  - ถ้า มีแล้ว -> output[i] += 1 (เพิ่มค่า value ขึ้น 1)
+  - ถ้า ยังไม่มี -> ให้ค่าเป็น 1
+- ตัวอย่าง:
+    "Today is present and present is your gift" -> { today: 1, is: 2, present: 2, and: 1, your: 1, gift: 1 }
+    "Do you best just do it" -> { do: 2, you: 1, best: 1, just: 1, it: 1 }
