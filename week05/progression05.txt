@@ -1,0 +1,49 @@
+Part 1: Working with Arrays & Objects
+1.
+- ใช้ .filter() เลือกเฉพาะนักเรียนที่ score < 60
+- ใช้ .map() แปลงชื่อ (name) เป็นตัวพิมพ์เล็กทั้งหมดด้วย .toLowerCase()
+- ผลลัพธ์คือ [ 'david' ]
+
+2.
+- ใช้ for...of loop วนดูนักเรียนทุกคน
+- ถ้า score < 60 -> push ทั้ง object {name, score} เข้า result
+- ผลลัพธ์คือ [ { name: 'David', score: 55 } ]
+
+3.
+- เช็คชนิดข้อมูลว่าคือ array หรือไม่ด้วย Array.isArray()
+
+Part 2: Array Operations
+4.
+- ใช้ a.concat(b) รวม array
+- ใช้ new Set(...) กำจัดค่าซ้ำ
+- ใช้ ... กระจายกลับเป็น array
+- ได้ [ 'apple', 'banana', 'cherry' ]
+
+5.
+- ใช้ .join(",") รวมค่าของ array เป็น string
+- ได้ "apple,banana,cherry"
+
+Part 3: Sorting
+6.
+- ใช้ .sort() ในการเรียงข้อมูล โดยมี compare function คือ
+  - (a,b) => a-b = เรียงจากน้อยไปมาก
+  - (a,b) => b-a = เรียงจากมากไปน้อย
+
+7.
+- ใช้ .sort() ในการเรียงข้อมูล
+- compare function -> b.id - a.id = เรียง id จากมากไปน้อย
+- ใช้ .localeCompare() = เรียงตัวอักษรตามพจนานุกรม
+
+Part 4: Functions & Modules
+8.
+- สร้างฟังก์ขัน echoTwice("Hello") -> "HelloHello"
+- สร้างฟังก์ขัน getLength("JS") -> 2
+- สร้างค่าคงที่ MAXSTUDENT = 60
+- แล้ว export ออก
+
+9.
+- ใช้ import ดึงฟังก์ชัน/ค่าคงที่มาใช้งาน
+
+10.
+- เช็คด้วยค่าคงที่ว่า 45 < 60 -> true
+- เช็คด้วยค่าคงที่ว่า 75 > 60 -> true
