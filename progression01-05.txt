@@ -1,0 +1,47 @@
+สรุปการฝึกฝน week 1 - 5
+week 1 – Arrays
+- การสร้างและเข้าถึงข้อมูลใน array
+- การวน loop ใน array
+- การใช้ ... (spread syntax)
+
+week 2 – Objects
+- การสร้างและเข้าถึงข้อมูลใน object
+- การสร้าง object แบบ constructor function
+- การสร้าง object ด้วย class
+- การใช้ for...in ลูปอ่าน key และ value ของ object
+- การเทียบ reference ของ objects
+- การดึง key และ value ของ object ออกมาใช้
+- การทำ Object destructuring
+
+week 3 – Functions
+- การสร้าง function แบบ function declaration
+- การสร้าง function แบบ arrow function
+- การสร้าง function แบบ function expression
+- การ reference ของ function
+- การใช้ callback function
+- การใช้ argument
+- การใช้ ... (rest parameter)
+- การใช้ค่า default ใน parameter ของ function
+
+week 4 – ArrayMethods
+- การใช้ .filter() คัดกรองข้อมูล
+- การใช้ .map() เปลี่ยนทุกค่าใน array
+- การใช้ .sort() เรียงลำดับข้อมูล
+- การใช้ .reverse() กลับลำดับข้อมูล
+- การใช้ .find() หาคำแรกที่ตรงเงื่อนไข
+- การใช้ .reduce() รวมค่า
+- การใช้ .push() เพิ่มข้อมูลเข้าไปท้าย array
+- การใช้ .pop() ลบข้อมูลอันสุดท้ายออกจาก array
+- การใช้ .splice() ลบ/แทนข้อมูล
+- การใช้ .slice() ตัด array
+- การใช้ .fill() แทนค่าทุกตัวใน array
+
+week 5 – ArrayMethods & JSModules
+- การเช็คชนิดข้อมูล array ด้วย Array.isArray()
+- การใช้ .concat() รวม array
+- การใช้ new Set(...) กำจัดค่าซ้ำ
+- การใช้ .join() รวมค่าของ array เป็น string
+- การใช้ .sort() โดยมี compare function ด้านใน
+- การใช้ .localeCompare() เรียงตัวอักษรตามพจนานุกรม
+- การ export modules ออกไปใช้
+- การ import modules เพื่อเอามาใช้
